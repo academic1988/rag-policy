@@ -37,20 +37,13 @@ cp .env.example .env
 # Edit .env and set OPENROUTER_API_KEY=<your key>
 ```
 
-### 5. Generate sample policy documents
-```bash
-python scripts/generate_sample_policies.py
-```
-This creates 10 `.txt` policy files in `data/policies/`.
-You can replace or supplement them with your own PDFs/txt/md files.
-
-### 6. Build the vector index
+### 5. Build the vector index
 ```bash
 python scripts/build_index.py
 ```
 Use `--force` to rebuild from scratch.
 
-### 7. Run the application
+### 6. Run the application
 ```bash
 python app.py
 ```
@@ -65,7 +58,7 @@ Web chat interface.
 
 ### `GET /health`
 ```json
-{ "status": "ok", "model": "meta-llama/llama-3.1-8b-instruct:free" }
+{ "status": "ok", "model": "openrouter/free" }
 ```
 
 ### `POST /chat`
@@ -86,7 +79,7 @@ Web chat interface.
     }
   ],
   "latency_ms": 1420,
-  "model": "meta-llama/llama-3.1-8b-instruct:free",
+  "model": "openrouter/free",
   "chunks_retrieved": 5
 }
 ```
@@ -134,14 +127,13 @@ The GitHub Actions workflow (`.github/workflows/ci-cd.yml`) will:
 ## Project Structure
 ```
 policy-rag/
-├── app/
+├── rag/
 │   ├── ingestion.py      # PDF/text loading, chunking, embedding, ChromaDB indexing
 │   ├── retrieval.py      # Query embedding + vector search
 │   └── generation.py     # Prompt building + OpenRouter LLM call
 ├── data/
 │   └── policies/         # Policy documents (PDF/txt/md)
 ├── scripts/
-│   ├── generate_sample_policies.py
 │   ├── build_index.py
 │   └── evaluate.py
 ├── templates/
@@ -153,6 +145,5 @@ policy-rag/
 ├── app.py                # Flask application entry point
 ├── requirements.txt
 ├── render.yaml
-├── Procfile
 └── .env.example
 ```
