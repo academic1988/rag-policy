@@ -1,0 +1,39 @@
+INFORMATION SECURITY POLICY
+Effective Date: February 1, 2024
+
+1. PURPOSE
+To protect the confidentiality, integrity, and availability of company and customer data.
+
+2. SCOPE
+This policy applies to all employees, contractors, and third parties accessing company systems.
+
+3. PASSWORD REQUIREMENTS
+- Minimum 14 characters
+- Must include uppercase, lowercase, numbers, and a special character
+- Passwords must not be reused within the last 12 cycles
+- Multi-factor authentication (MFA) is mandatory for all company accounts
+
+4. DEVICE SECURITY
+- Company laptops must have full-disk encryption enabled (BitLocker / FileVault)
+- Screen lock must activate after 5 minutes of inactivity
+- Personal devices accessing company data must be enrolled in Mobile Device Management (MDM)
+- Do not connect company devices to public Wi-Fi without using the company VPN
+
+5. DATA CLASSIFICATION
+- Public: marketing materials, published content
+- Internal: general business documents (default classification)
+- Confidential: customer data, financials, HR records — requires encrypted storage/transfer
+- Restricted: source code, encryption keys — access strictly controlled
+
+6. INCIDENT REPORTING
+Security incidents (data breaches, phishing, lost devices) must be reported to the
+Security team within 1 hour of discovery: security@acmecorp.com or call IT Help Desk.
+
+7. ACCEPTABLE USE
+Company systems are for business use. Incidental personal use is permitted but must not:
+- Compromise system security or performance
+- Violate any law or this policy
+
+8. TRAINING
+All employees must complete the annual security awareness training within 30 days of hire
+and each January thereafter.

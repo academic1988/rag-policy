@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: policy-rag-assistant
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt &&
+      python scripts/generate_sample_policies.py &&
+      python scripts/build_index.py
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false          # Set manually in Render dashboard
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: POLICIES_DIR
+        value: ./data/policies
+      - key: CHROMA_DB_PATH
+        value: ./data/chroma_db
+      - key: TOP_K
+        value: "5"
+      - key: EMBEDDING_MODEL
+        value: all-MiniLM-L6-v2
+      - key: LLM_MODEL
+        value: openrouter/free
+      - key: MAX_TOKENS
+        value: "1024"

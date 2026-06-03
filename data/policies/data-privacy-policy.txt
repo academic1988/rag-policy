@@ -1,0 +1,39 @@
+EMPLOYEE DATA PRIVACY POLICY
+Effective Date: April 1, 2024
+
+1. PURPOSE
+This policy explains how Acme Corp collects, uses, stores, and protects personal data
+related to employees and job applicants, in compliance with applicable privacy laws
+(GDPR, CCPA, and others).
+
+2. DATA WE COLLECT
+- Contact information (name, address, email, phone)
+- Employment history and qualifications
+- Compensation and benefits data
+- Performance and disciplinary records
+- Health information where required (e.g., accommodation requests)
+- Device usage logs for company-owned equipment
+
+3. HOW WE USE YOUR DATA
+Employee data is used solely for legitimate employment and business purposes including:
+payroll processing, benefits administration, compliance reporting, and performance management.
+
+4. DATA RETENTION
+- Active employee records: retained throughout employment + 7 years after termination
+- Applicant data (not hired): retained for 2 years
+- Payroll records: retained for 7 years per statutory requirements
+
+5. YOUR RIGHTS
+Employees have the right to:
+- Access their personal data held by the company
+- Request correction of inaccurate data
+- Request deletion (subject to legal retention requirements)
+Submit requests to privacy@acmecorp.com.
+
+6. DATA SHARING
+Employee data is not sold. It may be shared with benefit providers, payroll processors,
+and government agencies only as required for employment administration or legal compliance.
+
+7. DATA BREACHES
+Suspected breaches involving employee data must be reported to privacy@acmecorp.com
+within 24 hours of discovery.

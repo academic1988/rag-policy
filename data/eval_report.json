@@ -1,0 +1,454 @@
+{
+  "summary": {
+    "n": 22,
+    "groundedness_pct": 90.9,
+    "citation_accuracy_pct": 31.8,
+    "partial_match_pct": 95.5,
+    "latency_p50_ms": 2404,
+    "latency_p95_ms": 3087
+  },
+  "results": [
+    {
+      "id": "e01",
+      "question": "How many PTO days do new employees get per year?",
+      "gold": "15 days",
+      "topic": "PTO",
+      "answer": "New full-time employees accrue **15 PTO days per year** during years 0\u20132.[Source: Pto Policy]  \n\nPart-time employees also receive PTO, but it is accrued on a **pro-rated basis** rather than a fixed number of days.[Source: Pto Policy]",
+      "citations": [
+        {
+          "title": "Pto Policy",
+          "source": "pto-policy.txt",
+          "snippet": "PAID TIME OFF (PTO) POLICY Effective Date: January 1, 2024  1. OVERVIEW All full-time employees are eligible for Paid Time Off (PTO). PTO covers vacation, personal days, and non-illness-related absenc\u2026",
+          "score": 0.6273
+        }
+      ],
+      "grounded": false,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2703.49330001045
+    },
+    {
+      "id": "e02",
+      "question": "Can I carry over unused PTO days to next year?",
+      "gold": "Yes, up to 5 days",
+      "topic": "PTO",
+      "answer": "Yes. Employees may carry over **up to 5 unused PTO days** into the next calendar year, and any days above 5 are **forfeited on December 31**.[Source: Pto Policy]",
+      "citations": [
+        {
+          "title": "Pto Policy",
+          "source": "pto-policy.txt",
+          "snippet": "3. CARRYOVER Employees may carry over up to 5 unused PTO days into the next calendar year. Days in excess of 5 are forfeited on December 31.  4. REQUESTING PTO Submit PTO requests via the HR portal at\u2026",
+          "score": 0.7174
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 2814.591099973768
+    },
+    {
+      "id": "e03",
+      "question": "Will I be paid out for unused PTO if I resign?",
+      "gold": "Yes, up to 10 days",
+      "topic": "PTO",
+      "answer": "Yes. The PTO policy says **accrued, unused PTO will be paid out upon voluntary resignation or termination**, up to a maximum of **10 days**.[Source: Pto Policy]",
+      "citations": [
+        {
+          "title": "Pto Policy",
+          "source": "pto-policy.txt",
+          "snippet": "3. CARRYOVER Employees may carry over up to 5 unused PTO days into the next calendar year. Days in excess of 5 are forfeited on December 31.  4. REQUESTING PTO Submit PTO requests via the HR portal at\u2026",
+          "score": 0.6348
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 2122.394699952565
+    },
+    {
+      "id": "e04",
+      "question": "How many days per week do I need to be in the office?",
+      "gold": "Minimum 2 days",
+      "topic": "Remote Work",
+      "answer": "The **default hybrid schedule** requires employees to be on-site a minimum of **2 days per week**, typically **Tuesday and Thursday**, unless you and your manager agree otherwise.[Source: Remote Work Policy]",
+      "citations": [
+        {
+          "title": "Remote Work Policy",
+          "source": "remote-work-policy.txt",
+          "snippet": "5. EQUIPMENT STIPEND Employees receive a one-time home-office setup stipend of $500 upon approval of a remote or hybrid arrangement. An annual refresh stipend of $200 is available from Year 2 onwards.\u2026",
+          "score": 0.4414
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2323.884499957785
+    },
+    {
+      "id": "e05",
+      "question": "What is the home office equipment stipend?",
+      "gold": "$500 one-time",
+      "topic": "Remote Work",
+      "answer": "The **home office equipment stipend** is a **one-time $500 stipend** for a home-office setup, available upon approval of a remote or hybrid arrangement. An **annual refresh stipend of $200** is available from **Year 2 onwards**.[Source: Remote Work Policy]\n\nFor related home office costs, the expense policy also allows **office supplies for a home office up to $100/year without prior approval** and a **work-from-home internet subsidy up to $50/month**.[Source: Expense Reimbursement Policy]",
+      "citations": [
+        {
+          "title": "Remote Work Policy",
+          "source": "remote-work-policy.txt",
+          "snippet": "5. EQUIPMENT STIPEND Employees receive a one-time home-office setup stipend of $500 upon approval of a remote or hybrid arrangement. An annual refresh stipend of $200 is available from Year 2 onwards.\u2026",
+          "score": 0.6952
+        },
+        {
+          "title": "Expense Reimbursement Policy",
+          "source": "expense-reimbursement-policy.txt",
+          "snippet": "2. ELIGIBLE EXPENSES - Business travel (flights, trains, hotels, ground transport) - Client meals and entertainment (with prior manager approval) - Work-from-home internet subsidy: up to $50/month - P\u2026",
+          "score": 0.5291
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 3087.4399999156594
+    },
+    {
+      "id": "e06",
+      "question": "What are core working hours?",
+      "gold": "10 AM to 3 PM team primary time zone",
+      "topic": "Remote Work",
+      "answer": "All employees, regardless of location, must be available during core hours: **10:00 AM\u20133:00 PM in their team\u2019s primary time zone**. [Source: Remote Work Policy]",
+      "citations": [
+        {
+          "title": "Remote Work Policy",
+          "source": "remote-work-policy.txt",
+          "snippet": "5. EQUIPMENT STIPEND Employees receive a one-time home-office setup stipend of $500 upon approval of a remote or hybrid arrangement. An annual refresh stipend of $200 is available from Year 2 onwards.\u2026",
+          "score": 0.5245
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 1882.1699999971315
+    },
+    {
+      "id": "e07",
+      "question": "How long do I have to submit an expense claim?",
+      "gold": "30 days",
+      "topic": "Expenses",
+      "answer": "You must submit expense claims **within 30 days of the expense being incurred**.[Source: Expense Reimbursement Policy]",
+      "citations": [
+        {
+          "title": "Expense Reimbursement Policy",
+          "source": "expense-reimbursement-policy.txt",
+          "snippet": "3. INELIGIBLE EXPENSES - Alcohol (unless explicitly pre-approved for a client event) - Personal entertainment or leisure - Traffic fines or parking violations - Upgrades (e.g., business class airfare)\u2026",
+          "score": 0.6704
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2344.3596999859437
+    },
+    {
+      "id": "e08",
+      "question": "What is the monthly internet reimbursement?",
+      "gold": "Up to $50 per month",
+      "topic": "Expenses",
+      "answer": "The work-from-home internet subsidy is up to **$50 per month**. [Source: Expense Reimbursement Policy]",
+      "citations": [
+        {
+          "title": "Expense Reimbursement Policy",
+          "source": "expense-reimbursement-policy.txt",
+          "snippet": "2. ELIGIBLE EXPENSES - Business travel (flights, trains, hotels, ground transport) - Client meals and entertainment (with prior manager approval) - Work-from-home internet subsidy: up to $50/month - P\u2026",
+          "score": 0.4541
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 1579.0584000060335
+    },
+    {
+      "id": "e09",
+      "question": "Do I need a receipt for expenses over $25?",
+      "gold": "Yes, an itemised receipt is required",
+      "topic": "Expenses",
+      "answer": "Yes. For any **single expense over $25**, you need an **itemised receipt** under the Expense Reimbursement Policy.[Source: Expense Reimbursement Policy]",
+      "citations": [
+        {
+          "title": "Expense Reimbursement Policy",
+          "source": "expense-reimbursement-policy.txt",
+          "snippet": "3. INELIGIBLE EXPENSES - Alcohol (unless explicitly pre-approved for a client event) - Personal entertainment or leisure - Traffic fines or parking violations - Upgrades (e.g., business class airfare)\u2026",
+          "score": 0.4061
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 3280.3211000282317
+    },
+    {
+      "id": "e10",
+      "question": "How long should my password be?",
+      "gold": "Minimum 14 characters",
+      "topic": "Security",
+      "answer": "Your password should be **at least 14 characters long**. It must also include **uppercase letters, lowercase letters, numbers, and a special character**, and it must not have been reused in the last 12 cycles.[Source: Information Security Policy]",
+      "citations": [
+        {
+          "title": "Information Security Policy",
+          "source": "information-security-policy.txt",
+          "snippet": "3. PASSWORD REQUIREMENTS - Minimum 14 characters - Must include uppercase, lowercase, numbers, and a special character - Passwords must not be reused within the last 12 cycles - Multi-factor authentic\u2026",
+          "score": 0.4883
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 2411.9530000025406
+    },
+    {
+      "id": "e11",
+      "question": "How quickly must I report a security incident?",
+      "gold": "Within 1 hour of discovery",
+      "topic": "Security",
+      "answer": "You must report a security incident **immediately**. The policy excerpt says all users must \u201cimmediately report\u201d any attempted or suspected security or privacy incident, and it also requires employees to report suspected violations to HR or the anonymous ethics hotline.[Source: Information Security Policy][Source: Code Of Conduct]",
+      "citations": [
+        {
+          "title": "Information Security Policy",
+          "source": "information-security-policy.txt",
+          "snippet": "7. ACCEPTABLE USE Company systems are for business use. Incidental personal use is permitted but must not: - Compromise system security or performance - Violate any law or this policy  8. TRAINING All\u2026",
+          "score": 0.3437
+        },
+        {
+          "title": "Code Of Conduct",
+          "source": "code-of-conduct.txt",
+          "snippet": "4. REPORTING VIOLATIONS Employees must report suspected violations to HR or via the anonymous ethics hotline: ethics@acmecorp.com | 1-800-555-0199 (24/7). Retaliation against anyone reporting in good \u2026",
+          "score": 0.3191
+        }
+      ],
+      "grounded": false,
+      "citation_accurate": true,
+      "partial_match": false,
+      "latency_ms": 2668.2031999807805
+    },
+    {
+      "id": "e12",
+      "question": "Is MFA required for company accounts?",
+      "gold": "Yes, mandatory",
+      "topic": "Security",
+      "answer": "Yes. **MFA is mandatory for all company accounts**.[Source: Information Security Policy]",
+      "citations": [
+        {
+          "title": "Information Security Policy",
+          "source": "information-security-policy.txt",
+          "snippet": "3. PASSWORD REQUIREMENTS - Minimum 14 characters - Must include uppercase, lowercase, numbers, and a special character - Passwords must not be reused within the last 12 cycles - Multi-factor authentic\u2026",
+          "score": 0.7169
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2885.1145000662655
+    },
+    {
+      "id": "e13",
+      "question": "How many floating holidays do employees get?",
+      "gold": "2 floating holidays per year",
+      "topic": "Holidays",
+      "answer": "Employees get **2 floating holidays per calendar year**.[Source: Holiday Policy]",
+      "citations": [
+        {
+          "title": "Holiday Policy",
+          "source": "holiday-policy.txt",
+          "snippet": "2. FLOATING HOLIDAYS In addition to the 10 observed holidays above, each employee receives 2 floating holidays per calendar year to use at their discretion. Floating holidays do not carry over.  3. IN\u2026",
+          "score": 0.7942
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2396.8942000065
+    },
+    {
+      "id": "e14",
+      "question": "What happens if a holiday falls on a Sunday?",
+      "gold": "The following Monday is observed",
+      "topic": "Holidays",
+      "answer": "If a holiday falls on a Sunday, the following Monday is observed [Source: holiday-policy.txt].",
+      "citations": [
+        {
+          "title": "Holiday Policy",
+          "source": "holiday-policy.txt",
+          "snippet": "4. HOLIDAY ON WEEKEND When a holiday falls on a Saturday, the preceding Friday is observed. When it falls on a Sunday, the following Monday is observed.  5. HOLIDAY PAY Employees who work on an observ\u2026",
+          "score": 0.6317
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 874.541400000453
+    },
+    {
+      "id": "e15",
+      "question": "How much paid parental leave does the primary caregiver receive?",
+      "gold": "16 weeks at 100% base salary",
+      "topic": "Leave",
+      "answer": "The **primary caregiver** receives **16 weeks of paid parental leave at 100% of base salary**.[Source: Leave Of Absence Policy]",
+      "citations": [
+        {
+          "title": "Leave Of Absence Policy",
+          "source": "leave-of-absence-policy.txt",
+          "snippet": "B. PARENTAL LEAVE - Primary caregiver: 16 weeks paid leave at 100% base salary - Secondary caregiver: 6 weeks paid leave at 100% base salary Parental leave must commence within 12 months of birth, ado\u2026",
+          "score": 0.7965
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": true,
+      "partial_match": true,
+      "latency_ms": 2347.0436999341473
+    },
+    {
+      "id": "e16",
+      "question": "How many days of bereavement leave for an immediate family member?",
+      "gold": "5 days paid",
+      "topic": "Leave",
+      "answer": "For the death of an immediate family member (spouse, child, parent, sibling), you are eligible for 5 days of paid bereavement leave [Source: leave-of-absence-policy.txt].",
+      "citations": [
+        {
+          "title": "Leave Of Absence Policy",
+          "source": "leave-of-absence-policy.txt",
+          "snippet": "B. PARENTAL LEAVE - Primary caregiver: 16 weeks paid leave at 100% base salary - Secondary caregiver: 6 weeks paid leave at 100% base salary Parental leave must commence within 12 months of birth, ado\u2026",
+          "score": 0.5477
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 806.4752999925986
+    },
+    {
+      "id": "e17",
+      "question": "When are mid-year performance reviews conducted?",
+      "gold": "July",
+      "topic": "Performance",
+      "answer": "Mid-year performance reviews are conducted in **July**, covering performance from **January through June**.[Source: Performance Review Policy]",
+      "citations": [
+        {
+          "title": "Performance Review Policy",
+          "source": "performance-review-policy.txt",
+          "snippet": "PERFORMANCE REVIEW & FEEDBACK POLICY Effective Date: January 1, 2024  1. REVIEW CYCLE Acme Corp conducts formal performance reviews twice per year: - Mid-Year Review: July (covers January\u2013June perform\u2026",
+          "score": 0.7135
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2465.952099999413
+    },
+    {
+      "id": "e18",
+      "question": "What salary increase do I get with a rating of 5?",
+      "gold": "6-10%",
+      "topic": "Performance",
+      "answer": "A rating of **5** gets you a **6\u201310% salary increase**.[Source: Performance Review Policy]",
+      "citations": [
+        {
+          "title": "Performance Review Policy",
+          "source": "performance-review-policy.txt",
+          "snippet": "2. RATING SCALE Performance is rated on a 5-point scale: 5 \u2014 Exceptional: Consistently exceeds all expectations 4 \u2014 Exceeds Expectations: Regularly surpasses goals 3 \u2014 Meets Expectations: Achieves all\u2026",
+          "score": 0.4244
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2388.4278999175876
+    },
+    {
+      "id": "e19",
+      "question": "What is the annual L&D budget for individual contributors?",
+      "gold": "$1,500",
+      "topic": "L&D",
+      "answer": "**$1,500 per year** for individual contributors.[Source: Learning Development Policy]",
+      "citations": [
+        {
+          "title": "Learning Development Policy",
+          "source": "learning-development-policy.txt",
+          "snippet": "LEARNING & DEVELOPMENT POLICY Effective Date: January 1, 2024  1. LEARNING BUDGET Each full-time employee receives an annual Learning & Development (L&D) budget: - Individual Contributors: $1,500/year\u2026",
+          "score": 0.5787
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2536.7265000240877
+    },
+    {
+      "id": "e20",
+      "question": "Do L&D budgets roll over to the next year?",
+      "gold": "No, they do not roll over",
+      "topic": "L&D",
+      "answer": "No. L&D budgets **do not roll over** to the next year; they reset on January 1. [Source: Learning Development Policy]",
+      "citations": [
+        {
+          "title": "Learning Development Policy",
+          "source": "learning-development-policy.txt",
+          "snippet": "LEARNING & DEVELOPMENT POLICY Effective Date: January 1, 2024  1. LEARNING BUDGET Each full-time employee receives an annual Learning & Development (L&D) budget: - Individual Contributors: $1,500/year\u2026",
+          "score": 0.5966
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2514.202699996531
+    },
+    {
+      "id": "e21",
+      "question": "What is the stock price of Acme Corp?",
+      "gold": "GUARDRAIL \u2014 should refuse",
+      "topic": "Guardrail",
+      "answer": "I can only answer questions about our company policies. I could not find relevant information for your question.",
+      "citations": [
+        {
+          "title": "Performance Review Policy",
+          "source": "performance-review-policy.txt",
+          "snippet": "PERFORMANCE REVIEW & FEEDBACK POLICY Effective Date: January 1, 2024  1. REVIEW CYCLE Acme Corp conducts formal performance reviews twice per year: - Mid-Year Review: July (covers January\u2013June perform\u2026",
+          "score": 0.4055
+        },
+        {
+          "title": "Code Of Conduct",
+          "source": "code-of-conduct.txt",
+          "snippet": "6. SOCIAL MEDIA Do not share confidential or proprietary company information on social media. When posting in a personal capacity, make clear views are your own, not Acme Corp's.\u2026",
+          "score": 0.4009
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 2462.896700017154
+    },
+    {
+      "id": "e22",
+      "question": "What is the capital of France?",
+      "gold": "GUARDRAIL \u2014 should refuse",
+      "topic": "Guardrail",
+      "answer": "I can only answer questions about our company policies. I could not find relevant information for your question.",
+      "citations": [
+        {
+          "title": "Holiday Policy",
+          "source": "holiday-policy.txt",
+          "snippet": "PUBLIC HOLIDAY & OBSERVED HOLIDAY POLICY Effective Date: January 1, 2024\u2026",
+          "score": 0.1223
+        },
+        {
+          "title": "Learning Development Policy",
+          "source": "learning-development-policy.txt",
+          "snippet": "LEARNING & DEVELOPMENT POLICY Effective Date: January 1, 2024  1. LEARNING BUDGET Each full-time employee receives an annual Learning & Development (L&D) budget: - Individual Contributors: $1,500/year\u2026",
+          "score": 0.0869
+        }
+      ],
+      "grounded": true,
+      "citation_accurate": false,
+      "partial_match": true,
+      "latency_ms": 718.8180999364704
+    }
+  ]
+}
