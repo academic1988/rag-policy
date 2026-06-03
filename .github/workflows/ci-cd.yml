@@ -30,9 +30,6 @@ jobs:
       - name: Import check
         run: python -c "import app; print('✅ Import OK')"
 
-      - name: Generate sample policies (for tests)
-        run: python scripts/generate_sample_policies.py
-
       - name: Run tests
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY || 'ci-placeholder' }}
@@ -56,5 +53,3 @@ jobs:
             --fail \
             --silent \
             --show-error
-        # Set RENDER_DEPLOY_HOOK_URL in GitHub repo Settings > Secrets
-        # Get it from Render dashboard: Service > Settings > Deploy Hook
