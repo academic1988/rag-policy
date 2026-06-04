@@ -1,4 +1,4 @@
-# Policy RAG Assistant
+c# Policy RAG Assistant
 
 A Retrieval-Augmented Generation (RAG) application that answers questions about company policies using a ChromaDB vector store, sentence-transformer embeddings, and an LLM served via [OpenRouter](https://openrouter.ai).
 
@@ -13,8 +13,8 @@ A Retrieval-Augmented Generation (RAG) application that answers questions about 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/policy-rag.git
-cd policy-rag
+git clone https://github.com/<your-username>/rag-policy.git
+cd rag-policy
 ```
 
 ### 2. Create and activate a virtual environment
@@ -126,7 +126,7 @@ The GitHub Actions workflow (`.github/workflows/ci-cd.yml`) will:
 
 ## Project Structure
 ```
-policy-rag/
+rag-policy/
 ├── rag/
 │   ├── ingestion.py      # PDF/text loading, chunking, embedding, ChromaDB indexing
 │   ├── retrieval.py      # Query embedding + vector search
