@@ -94,8 +94,7 @@ CORS is enabled to support future decoupled frontend deployments.
 The GitHub Actions workflow (`.github/workflows/ci-cd.yml`) runs on every push and pull request:
 1. Installs dependencies from `requirements.txt`
 2. Runs an import smoke test (`python -c "import app"`)
-3. Generates sample policy documents
-4. Runs the full `pytest` suite
+3. Runs the full `pytest` suite
 
 Deployment to Render is triggered only on successful pushes to `main`, via a deploy webhook
 stored as a GitHub repository secret (`RENDER_DEPLOY_HOOK_URL`). This ensures broken builds
